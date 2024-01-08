@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSite</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <style>
+        body{
+            background-image: url(./Resources/peakpx.jpg);
+            }
+        .c{
+            padding-top: 5%;
+                          
+          }
+        .accordion-item, .accordion-body
+          {
+            font-family:  cursive;
+          }
+
+    </style>
+</head>
+<body>
+    
+ <!-- accordion  -->
+ <div class="c container">
+    <div class="p-5">
+        <div class="accordion p-5" id="accordionExample">
+            <div class="accordion-item bg-transparent fst-italic text-light fw-lighter rounded-5 border-info">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button bg-transparent text-light fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Discuss the scope of var, let, and const
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body text-warning fw-lighter text-center">
+                  <h4 class="text-decoration-underline text-danger text-center">VAR</h4>
+                  <strong> var declarations are globally scoped or function scoped. The scope is global when a var variable is declared outside a function. var is function scoped when it is declared within a function.
+                  var variables can be updated and re-declared within its scope.
+                  </strong><br><br>
+                  <h4 class="text-decoration-underline text-center text-danger">LET</h4>
+                  <strong> let declarations are block scoped. let variables can be updated but not re-declared.</strong><br><br>
+                  <h4 class="text-decoration-underline text-center text-danger">CONST</h4>
+                  <strong> const declarations can only be accessed within the block they were declared. const variables can neither be updated nor re-declared.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item text-center bg-transparent fst-italic text-light fw-lighter rounded-5 border-info">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed bg-transparent fw-semibold text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Tell us the use cases of null and undefined
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body text-warning fw-lighter text-center">
+                  <h4 class="text-decoration-underline text-danger">NULL</h4>
+                  <strong>Null is an assignable value, and it is sometimes intensionally assigned to a variable to show the absence of the value of that variable. When we need to indicate no assigned value for a variable or object, we use null.
+                  </strong><br><br>
+                  <h4 class="text-decoration-underline text-danger">UNDEFINED</h4>
+                  <strong>It indicates variables that are declared but not assigned any values or something that is "not defined." In javascript, when we declare a variable and do not assign it any value, it is called an undefined variable.
+                  It is automatically assigned by Javascript to the variable if we forget to assign any value to a variable.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item  text-center bg-transparent fst-italic text-light fw-lighter rounded-5 border-info">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed bg-transparent fw-semibold text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  What do you mean by REST API?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body text-warning fw-lighter text-center">
+                  <h4 class="text-decoration-underline text-danger">REST API</h4>
+                  <strong>REST (Representational State Transfer) API is an architectural style for designing networked applications. In other words we can say,
+                  APIs that follows REST architectural style are known as REST API.
+                  </strong>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+ </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
